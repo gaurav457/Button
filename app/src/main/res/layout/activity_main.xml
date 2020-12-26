@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffbbcc"
+
+
+    android:padding="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#AAE19E"
+
+        android:ems="10"
+        android:hint="Enter 1st Number"
+        android:inputType="number|numberDecimal"
+
+        android:padding="20dp"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="20dp"
+
+        android:background="#AAE19E"
+        android:hint="Enter 2nd Number"
+        android:inputType="number|numberDecimal"
+        android:padding="20dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Result"
+
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/New"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Calculate"
+        android:layout_alignRight="@id/Calculate"
+        android:layout_centerInParent="true"
+
+        android:text="New"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbg1"
+        android:layout_marginTop="20dp"
+        android:text="Calculate"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rbg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result">
+
+        <RadioButton
+            android:id="@+id/rbadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Add" />
+
+        <RadioButton
+            android:id="@+id/rbsub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub" />
+
+        <RadioButton
+            android:id="@+id/rbmul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mul" />
+
+        <RadioButton
+            android:id="@+id/rbdiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Div" />
+    </RadioGroup>
+
+</RelativeLayout>
